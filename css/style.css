@@ -212,3 +212,53 @@ h1 span {
   }
 }
 
+/* 作品リンク */
+
+.work-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wark-info h3 {
+  transition: color 0.3s ease;
+}
+
+.work-info h3 span {
+  display: inline-block;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.wark-link:hover 
+.work-info h3 {
+  color: var(--accent);
+}
+
+.work-link:hover 
+.work-info h3 span {
+  transform: translate(5px, -5px);
+}
+
+.work-image {
+  transition: transform 0.5s ease;
+}
+
+.work-limk:hover
+.work-image {
+  transform: scale(1.02);
+}
+
+.work-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+/* コンタクト */
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
