@@ -2,132 +2,192 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
-    <meta name="description" content="Web Design and Front-end Portfolio">
+  <title>My Portfolio</title>
+  <meta name="description" content="Web Design and Front-end Portfolio">
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">PORTFOLIO®</a>
+  <header class="header">
+    <a href="#" class="logo">PORTFOLIO®</a>
 
-        <nav class="nav">
-            <a href="#about">ABOUT</a>
-            <a href="#works">WORKS</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
+    <nav class="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#works">WORKS</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <p class="eyebrow">WEB DESIGN / FRONT-END</p>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">WEB DESIGN / FRONT-END</p>
 
-            <h1>
-                Design with<br>
-                <em>intention.</em><br>
-                Build with<br>
-                curiosity<span>.</span>
-            </h1>
+      <h1>
+        Design with<br>
+        <em>intention.</em><br>
+        Build with<br>
+        curiosity<span>.</span>
+      </h1>
 
-            <p class="hero-description">
-                デザインとコードで、<br>
-                伝わる体験をつくる。
-            </p>
+      <p class="hero-description">
+        デザインとコードで、<br>
+        伝わる体験をつくる。
+      </p>
 
-            <a href="#works" class="hero-link">
-                EXPLORE MY WORKS ↘
-            </a>
-        </section>
+      <a href="#works" class="hero-link">
+        EXPLORE MY WORKS ↘
+      </a>
+    </section>
 
-        <section id="about" class="section">
-            <p class="section-label">01 / ABOUT ME</p>
-            <h2>About<em>me.</em> </h2>
-            <h3>デザインへの思い、将来の展望 </h3>
-            <p>私は「なぜこのデザインなのか」を大切にしながら作品を制作しています。世界観の設定や使われる場面まで考え、見る人の印象に残るデザインを目指しています。</p>
-        </section>
+    <section id="about" class="section">
+      <p class="section-label">01 / ABOUT ME</p>
+      <h2>About<em>me.</em> </h2>
+      <h3>デザインへの思い、将来の展望 </h3>
+      <p>私は「なぜこのデザインなのか」を大切にしながら作品を制作しています。世界観の設定や使われる場面まで考え、見る人の印象に残るデザインを目指しています。</p>
+    </section>
 
-        <section id="skills" class="section">
-            <p class="section-label">02 / TOOLKIT</p>
-            <h2>My <em>skills.</em></h2>
-            <p> Photoshop / Illustrator / HTML / CSS / Figma</p>
-        </section>
-
-
-        <section id="works" class="section">
-            <p class="section-label">03 / SELECTED WORKS</p>
-            <h2>Selected<em>works.</em> </h2>
-
-            <div class="works-grid">
-                <article class="work-card">
-                    <a href="https://yamada2450.github.io/suizokukan/" taraget="_blank" rel="noopener noreferrer"
-                        class="work-link">
-                        <div class="work-image aqua">AQUA LUMINA</div>
-                        <div class="work-info">
-                            <h3>AQUA LUMINA <span>↗</span></h3>
-                            <p>水族館Webサイト</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="work-card">
-
-                    <a href="https://yamada2450.github.io/Moji-POP/" taraget="_blank" rel="noopener noreferrer"
-                        class="work-link">
-                        <div class="work-image class-work">WEB PROJECT</div>
-                        <div class="work-info">
-                            <h3>MOJI POP <span>↗</span></h3>
-                            <p>授業で制作したWebサイト</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="work-card">
-                    <a href="https://jikeigroupcom-my.sharepoint.com/:b:/g/personal/ttc2450sd0014_edu_tech_ac_jp/IQC4OB_oIR5-Sbrg1NZoEimPAa8rcd3sJWXdBN-qMveTARM?e=SU2Pav"
-                        taraget="_blank" rel="noopener noreferrer" class="work-link">
-                        <div class="work-image illustration">ILLUSTRATION</div>
-                        <div class="work-info">
-                            <h3>Illustration <span>↗</span></h3>
-                            <p>イラスト作品</p>
-                        </div>
-                    </a>
-                </article>
+    <section id="skills" class="section">
+      <p class="section-label">02 / TOOLKIT</p>
+      <h2>My <em>skills.</em></h2>
+      <p class="skills-description">
+        デザインからコーディングまで、
+        制作で使用しているツールとスキル。
+      </p>
+      <div class="skills-grid">
+        <!-- Photoshop -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 90%; --skill-color: #31A8FF;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" alt="Photoshop">
+              <span>90%</span>
             </div>
-        </section>
-
-        <section id="contact" class="section">
-            <p class="section-label">04 / CONTACT</p>
-            <h2>Let's make<br><em>something.</em></h2>
-             <p>ご覧いただきありがとうございます。</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>MAIL</span>
-                    <a href="mailto:yamada1117sota@gmail.com">
-                        yamada1117sota@gmail.com ↗
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <span>PHONE</span>
-                    <a href="trl:08064829815">
-                        080-6482-9815 ↗
-                    </a>
-                </div>
+          </div>
+          <h3>Photoshop</h3>
+          <p>画像編集・加工・イラスト</p>
+        </div>
+        <!-- Illustrator -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 75%; --skill-color: #FF9A00;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/adobeillustrator/FF9A00" alt="Illustrator">
+              <span>75%</span>
             </div>
+          </div>
+          <h3>Illustrator</h3>
+          <p>ロゴ・バナー・グラフィック</p>
+        </div>
+        <!-- Figma -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 80%; --skill-color: #F24E1E;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
+              <span>80%</span>
+            </div>
+          </div>
+          <h3>Figma</h3>
+          <p>UI / UXデザイン</p>
+        </div>
+        <!-- HTML -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 70%; --skill-color: #E34F26;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+              <span>70%</span>
+            </div>
+          </div>
+          <h3>HTML</h3>
+          <p>Webページ制作</p>
+        </div>
+        <!-- CSS -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 70%; --skill-color: #663399;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/css/663399" alt="CSS">
+              <span>70%</span>
+            </div>
+          </div>
+          <h3>CSS</h3>
+          <p>レイアウト・装飾</p>
+        </div>
+       
+      </div>
+    </section>
 
-           
-        </section>
 
-    </main>
+    <section id="works" class="section">
+      <p class="section-label">03 / SELECTED WORKS</p>
+      <h2>Selected<em>works.</em> </h2>
 
-    <footer class="footer">
-        © 2026 MY PORTFOLIO
-    </footer>
+      <div class="works-grid">
+        <article class="work-card">
+          <a href="https://yamada2450.github.io/suizokukan/" taraget="_blank" rel="noopener noreferrer"
+            class="work-link">
+            <div class="work-image aqua">AQUA LUMINA</div>
+            <div class="work-info">
+              <h3>AQUA LUMINA <span>↗</span></h3>
+              <p>水族館Webサイト</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card">
+
+          <a href="https://yamada2450.github.io/Moji-POP/" taraget="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-image class-work">WEB PROJECT</div>
+            <div class="work-info">
+              <h3>MOJI POP <span>↗</span></h3>
+              <p>授業で制作したWebサイト</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card">
+          <a href="https://jikeigroupcom-my.sharepoint.com/:b:/g/personal/ttc2450sd0014_edu_tech_ac_jp/IQC4OB_oIR5-Sbrg1NZoEimPAa8rcd3sJWXdBN-qMveTARM?e=SU2Pav"
+            taraget="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-image illustration">ILLUSTRATION</div>
+            <div class="work-info">
+              <h3>Illustration <span>↗</span></h3>
+              <p>イラスト作品</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="section-label">04 / CONTACT</p>
+      <h2>Let's make<br><em>something.</em></h2>
+      <p>ご覧いただきありがとうございます。</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>MAIL</span>
+          <a href="mailto:yamada1117sota@gmail.com">
+            yamada1117sota@gmail.com ↗
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <span>PHONE</span>
+          <a href="trl:08064829815">
+            080-6482-9815 ↗
+          </a>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 MY PORTFOLIO
+  </footer>
 </body>
 
 </html>

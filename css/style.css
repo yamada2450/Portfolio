@@ -230,7 +230,7 @@ h1 span {
   transition: transform 0.3s ease;
 }
 
-.wark-link:hover 
+.work-link:hover 
 .work-info h3 {
   color: var(--accent);
 }
@@ -254,6 +254,14 @@ h1 span {
   outline-offset: 5px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .wark-info h3,
+  .wark-info h3 span,
+  .wark-image {
+    transition: none;
+  }
+}
+
 /* コンタクト */
 
 .contact-info {
@@ -261,4 +269,108 @@ h1 span {
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 40px;
   margin-top: 60px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #aaa;
+}
+
+.contact-item span {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #777;
+}
+
+.contact-item a:hover {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+}
+
+/* SKILLS */
+.skills-description {
+  margin-bottom: 55px;
+  line-height: 1.8;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 55px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* パラメータ */
+
+.skill-circle {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+
+  background: conic-gradient(
+    var(--skill-color)
+    var(--percent),
+    #dedbd4 var(--percent)
+  );
+
+  display: grid;
+  place-items: center;
+  transition: transform 0.4s ease;
+}
+
+.skill-inner {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: var(--paper);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.skill-inner img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.skill-inner span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill-card h3 {
+  margin: 18px 0 5px;
+  font-size: 16px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.skill-card:hover 
+.skill-circle {
+  transform: scale(1.08) rotate(5deg);
 }
