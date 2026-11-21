@@ -4,61 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>My Portfolio</title>
-  <meta name="description" content="Web Design and Front-end Portfolio">
-
+  <title>Portfolio | Yamada Sota</title>
+  <meta name="description" content="Web design and front-end portfolio by Yamada Sota.">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header">
-    <a href="#" class="logo">PORTFOLIO®</a>
-
+    <a href="#top" class="logo">PORTFOLIO<span>®</span></a>
     <nav class="nav">
-      <a href="#about">ABOUT</a>
-      <a href="#works">WORKS</a>
-      <a href="#skills">SKILLS</a>
-      <a href="#contact">CONTACT</a>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <main id="top">
     <section class="hero">
-      <p class="eyebrow">WEB DESIGN / FRONT-END</p>
-
-      <h1>
-        Design with<br>
-        <em>intention.</em><br>
-        Build with<br>
-        curiosity<span>.</span>
-      </h1>
-
-      <p class="hero-description">
-        デザインとコードで、<br>
-        伝わる体験をつくる。
-      </p>
-
-      <a href="#works" class="hero-link">
-        EXPLORE MY WORKS ↘
-      </a>
+      <div class="hero-top">
+        <span>WEB DESIGN / FRONT-END</span>
+        <span>PORTFOLIO 2026</span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-label">CREATIVE PORTFOLIO</p>
+        <h1>
+          Design with<br>
+          intention.<br>
+          Build with<br>
+          curiosity.
+        </h1>
+        <p class="hero-japanese">
+          デザインに意図を。制作に好奇心を。
+        </p>
+        <p class="hero-description">
+          Visual design, web design<br>
+          and creative development.
+        </p>
+        <a href="#works" class="hero-link">
+          EXPLORE WORKS <span>↘</span>
+        </a>
+      </div>
+      <div class="hero-bottom">
+        <span>YAMADA SOTA</span>
+        <span>DESIGN / DEVELOPMENT</span>
+      </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="about-section">
-      <div class="section-label">
-        01 / ABOUT ME
-      </div>
+      <div class="section-label">01 / ABOUT ME</div>
       <h2 class="section-title">About me.</h2>
-
       <div class="about-layout">
-
-        <!-- プロフィール -->
+        <!-- PROFILE -->
         <div class="about-profile">
           <div class="about-image">
-            <img src="images/profile.jpg" alt="プロフィール画像" class="profile-image">
+            <img src="images/profile.jpg" alt="プロフィール写真">
           </div>
-
           <h3 class="about-name">山田蒼太</h3>
           <p class="about-name-en">Yamada Sota</p>
           <div class="about-profile-line"></div>
@@ -73,107 +84,127 @@
             <span>FRONT-END</span>
             <span>ILLUSTRATION</span>
           </div>
-
         </div>
 
-        <!-- 自己紹介 -->
-         <div class="about-content">
-
+        <!-- ABOUT CONTENT -->
+        <div class="about-content">
           <div class="about-block">
-            <span class="abou-number">01</span>
+            <span class="about-number">01</span>
             <h3>Design philosophy</h3>
-            <p class="about-block-subtitle">デザインへの思い、将来の展望 </p>
-            <p class="about-text">私は「なぜこのデザインなのか」を大切にしながら作品を制作しています。世界観の設定や使われる場面まで考え、見る人の印象に残るデザインを目指しています。</p>
-          </div>
-
-          <div class="about-block">
-            <span class="abou-number">02</span>
-            <h3>Interest</h3>
-            <p class="about-block-subtitle">興味のある分野</p>
-            <p class="about-text">Webデザインを中心に、UI・UX,イラスト、に興味があります。デザインと実装の両方から作品づくりにとりくんでいます。
+            <p class="about-block-subtitle">
+              デザインへの思い、未来の展望
+            </p>
+            <p class="about-text">
+              私は「なぜこのデザインなのか」を大切にしながら作品を制作しています。色や形、文字の配置ひとつにも意味を持たせ、見た目の美しさだけでなく、使う人にとって心地よく、印象に残るデザインを目指しています。
             </p>
           </div>
 
           <div class="about-block">
-            <span class="abou-number">03</span>
-            <h3>My strengths</h3>
-            <p class="about-block-subtitle">自分の強み</p>
-            <p class="about-text">アイデアを形にすることと、細かな表現にこだわりながら試行錯誤を重ねることが自分の強みです。イラストなどの制作で培った感覚をWebデザインにも活かしています。</p>
-        </div>
-        <div class="about-block">
-          <span class="abou-number">04</span>
-          <h3>Future</h3>
-          <p class="about-block-subtitle">これから目指すもの</p>
-          <p class="about-text">デザインとコーディングの技術の両方を理解し、アイデアを自分の手で形にできるWebデザイナーを目指しています。ユーザー視点を大切にしながら、視覚的な魅力と使いやすさを両立したWebサイトを制作できるよう、日々学び続けています。</p>
-        </div>
-
-        <!-- 制作分野 -->
-
-        <div class="about-fields">
-          <div class="about-field">
-            <span class="about-field-label">01/DESIGN</span>
-            <p>Visual/UI/UX</p>
+            <span class="about-number">02</span>
+            <h3>Interests</h3>
+            <p class="about-block-subtitle">
+              興味のある分野
+            </p>
+            <p class="about-text">
+              Webデザインを中心に、UI・UX、イラストなど、幅広い表現に興味があります。デザインと実装の両方から作品づくりに取り組んでいます。
+            </p>
           </div>
 
-          <div class="about-field">
-            <span class="about-field-label">02/DEVELOPMENT</span>
-            <p>HTML/CSS/JavaScript</p>
+          <div class="about-block">
+            <span class="about-number">03</span>
+            <h3>My strengths</h3>
+            <p class="about-block-subtitle">
+              自分の強み
+            </p>
+            <p class="about-text">
+              アイデアを形にすることと、細かな表現にこだわりながら 試行錯誤を重ねることが自分の強みです。 イラストやビジュアル制作で培った感覚をWebデザインにも活かし、 デザインの意図を考えながら制作しています。
+            </p>
+          </div>
+
+          <div class="about-block">
+            <span class="about-number">04</span>
+            <h3>Future</h3>
+            <p class="about-block-subtitle">
+              これから目指すもの
+            </p>
+            <p class="about-text">
+              デザインと技術の両方を理解し、 アイデアを自分の手で形にできるWebデザイナーを目指しています。ユーザー視点を大切にしながら、視覚的な魅力と使いやすさを両立したWebサイトを制作できるよう、日々学び続けています。
+            </p>
+          </div>
+
+          <!-- DESIGN / DEVELOPMENT -->
+          <div class="about-fields">
+            <div class="about-field">
+              <span class="about-field-label">01 / DESIGN</span>
+              <p>Visual / UI / UX</p>
+            </div>
+            <div class="about-field">
+              <span class="about-field-label">02 / DEVELOPMENT</span>
+              <p>HTML / CSS / JavaScript</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <p class="section-label">02 / TOOLKIT</p>
-      <h2>My <em>skills.</em></h2>
-      <p class="skills-description">
-        デザインからコーディングまで、
-        制作で使用しているツールとスキル。
-      </p>
+        <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+      <div class="section-label">02 / SKILLS</div>
+      <h2 class="section-title">My skills.</h2>
+      <!-- <p class="skills-description">
+        Tools and technologies used in my creative process.
+      </p> -->
+
       <div class="skills-grid">
-        <!-- Photoshop -->
+
+        <!-- PHOTOSHOP -->
         <div class="skill-card">
           <div class="skill-circle" style="--percent: 90%; --skill-color: #31A8FF;">
             <div class="skill-inner">
-              <img src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" alt="Photoshop">
+              <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBVqgFyIt4fje4zPBjaoJSzP2jAO8keMK1cG_2sI1K6WLmbw_8T8TpDEybGV522fcVH4GmuPzL_JUNqQt7SFHPJk-&format=source&h=210" alt="Photoshop">
               <span>90%</span>
             </div>
           </div>
           <h3>Photoshop</h3>
-          <p>画像編集・加工・イラスト</p>
+          <p>Image editing / Visual design</p>
         </div>
-        <!-- Illustrator -->
+
+        <!-- ILLUSTRATOR -->
         <div class="skill-card">
           <div class="skill-circle" style="--percent: 75%; --skill-color: #FF9A00;">
             <div class="skill-inner">
-              <img src="https://cdn.simpleicons.org/adobeillustrator/FF9A00" alt="Illustrator">
+              <img src="https://buy.itreview.jp/cdn/shop/products/Illustrator_61c5a7c9-a0fd-4fd0-b9fe-95d6ab72a4ca_1200x1200.png?v=1638282560" alt="Illustrator">
               <span>75%</span>
             </div>
           </div>
           <h3>Illustrator</h3>
-          <p>ロゴ・バナー・グラフィック</p>
+          <p>Graphic design / Illustration</p>
         </div>
-        <!-- Figma -->
+
+        <!-- FIGMA -->
         <div class="skill-card">
           <div class="skill-circle" style="--percent: 80%; --skill-color: #F24E1E;">
             <div class="skill-inner">
-              <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
+              <img src="https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png" alt="Figma">
               <span>80%</span>
             </div>
           </div>
           <h3>Figma</h3>
-          <p>UI / UXデザイン</p>
+          <p>UI design / Wireframe</p>
         </div>
+
         <!-- HTML -->
         <div class="skill-card">
           <div class="skill-circle" style="--percent: 70%; --skill-color: #E34F26;">
             <div class="skill-inner">
-              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML">
               <span>70%</span>
             </div>
           </div>
           <h3>HTML</h3>
-          <p>Webページ制作</p>
+          <p>Structure / Markup</p>
         </div>
+
         <!-- CSS -->
         <div class="skill-card">
           <div class="skill-circle" style="--percent: 70%; --skill-color: #663399;">
@@ -183,81 +214,145 @@
             </div>
           </div>
           <h3>CSS</h3>
-          <p>レイアウト・装飾</p>
+          <p>Styling / Responsive design</p>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="skill-card">
+          <div class="skill-circle" style="--percent: 50%; --skill-color: #B59A00;">
+            <div class="skill-inner">
+              <img src="https://cdn.simpleicons.org/javascript/B59A00" alt="JavaScript">
+              <span>50%</span>
+            </div>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interaction / Animation</p>
         </div>
 
       </div>
     </section>
 
-
-    <section id="works" class="section">
-      <p class="section-label">03 / SELECTED WORKS</p>
-      <h2>Selected<em>works.</em> </h2>
+    <!-- WORKS -->
+    <section id="works" class="section works-section">
+      <div class="section-label">03 / SELECTED WORKS</div>
+      <h2 class="section-title">Selected works.</h2>
+      <p class="section-description">
+        Selected projects, experiments and visual creations.
+      </p>
 
       <div class="works-grid">
-        <article class="work-card">
-          <a href="https://yamada2450.github.io/suizokukan/" taraget="_blank" rel="noopener noreferrer"
-            class="work-link">
-            <div class="work-image aqua">AQUA LUMINA</div>
-            <div class="work-info">
-              <h3>AQUA LUMINA <span>↗</span></h3>
-              <p>水族館Webサイト</p>
-            </div>
-          </a>
-        </article>
 
-        <article class="work-card">
-
-          <a href="https://yamada2450.github.io/Moji-POP/" taraget="_blank" rel="noopener noreferrer" class="work-link">
-            <div class="work-image class-work">WEB PROJECT</div>
-            <div class="work-info">
-              <h3>MOJI POP <span>↗</span></h3>
-              <p>授業で制作したWebサイト</p>
+        <!-- WORK 01 -->
+        <a href="https://yamada2450.github.io/suizokukan/" target="_blank" rel="noopener noreferrer"
+          class="work-card work-link">
+          <div class="work-image">
+            <img src="images/aqua.jpg" alt="AQUA LUMINA">
+            <span class="work-arrow">↗</span>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span>01 / WEB DESIGN</span>
+              <span>2026</span>
             </div>
-          </a>
-        </article>
-
-        <article class="work-card">
-          <a href="https://jikeigroupcom-my.sharepoint.com/:b:/g/personal/ttc2450sd0014_edu_tech_ac_jp/IQC4OB_oIR5-Sbrg1NZoEimPAa8rcd3sJWXdBN-qMveTARM?e=SU2Pav"
-            taraget="_blank" rel="noopener noreferrer" class="work-link">
-            <div class="work-image illustration">ILLUSTRATION</div>
-            <div class="work-info">
-              <h3>Illustration <span>↗</span></h3>
-              <p>イラスト作品</p>
+            <h3>AQUA LUMINA</h3>
+            <p>
+              Aquarium website concept and web design.
+            </p>
+            <div class="work-tags">
+              <span>DESIGN</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
-          </a>
-        </article>
+          </div>
+        </a>
+
+        <!-- WORK 02 -->
+        <a href="https://yamada2450.github.io/Moji-POP/" target="_blank" rel="noopener noreferrer"
+          class="work-card work-link">
+          <div class="work-image">
+            <img src="images/webwork.png" alt="Web design project">
+            <span class="work-arrow">↗</span>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span>02 / WEB PROJECT</span>
+              <span>2026</span>
+            </div>
+            <h3>Moji-POP</h3>
+            <p>
+              Web projects created through learning and experimentation.
+            </p>
+            <div class="work-tags">
+              <span>WEB</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- WORK 03 -->
+        <a href="file:///C:/Users/student/Desktop/web%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA.pdf" target="_blank" rel="noopener noreferrer" class="work-card work-link">
+          <div class="work-image">
+            <img src="images/illustration.jpg" alt="Illustration portfolio">
+            <span class="work-arrow">↗</span>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span>03 / ILLUSTRATION</span>
+              <span>2026</span>
+            </div>
+            <h3>Illustration</h3>
+            <p>
+              Character design and personal illustrations.
+            </p>
+            <div class="work-tags">
+              <span>ART</span>
+              <span>ILLUSTRATION</span>
+            </div>
+          </div>
+        </a>
+
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <p class="section-label">04 / CONTACT</p>
-      <h2>Let's make<br><em>something.</em></h2>
-      <p>ご覧いただきありがとうございます。</p>
-      <div class="contact-info">
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-label">04 / CONTACT</div>
+      <h2 class="section-title">Let's connect.</h2>
+      <p class="contact-description">
+        Feel free to contact me for any inquiries.
+      </p>
+
+      <div class="contact-content">
         <div class="contact-item">
-          <span>MAIL</span>
-          <a href="mailto:yamada1117sota@gmail.com">
-            yamada1117sota@gmail.com ↗
+          <span class="contact-label">EMAIL</span>
+          <a href="mailto:your-email@example.com">
+            yamada1117sota@gmail.com
+            <span>↗</span>
           </a>
         </div>
 
         <div class="contact-item">
-          <span>PHONE</span>
-          <a href="trl:08064829815">
-            080-6482-9815 ↗
+          <span class="contact-label">TEL</span>
+          <a href="tel:09012345678">
+            080-6482-9815
+            <span>↗</span>
           </a>
         </div>
       </div>
-
-
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    © 2026 MY PORTFOLIO
+    <p>© 2026 YAMADA SOTA</p>
+    <a href="#top">BACK TO TOP ↑</a>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
